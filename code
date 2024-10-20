@@ -1,0 +1,16 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+    int arr[8];
+    int number = 1;
+    for (int i = 0; i < 8; ++i) {
+        cout << "Enter a[" << i << "]: ";
+        cin >> arr[i];
+        if (arr[i] % 2 != 0) { // перевірка на непарність та обчислення добутку
+            number *= arr[i];
+        }
+    }
+    cout << "добуток усіх непарних елементів масиву: " << number << endl;
+    return 0;
+}
